@@ -69,12 +69,28 @@ main {
 
 /* position boards */
 .relative, .absolute, .fixed, .sticky {
-    display: flex; 
+    display: flex;
 }
+
+
+
 .clothing img {
     display: block;
     margin: 0 1em 0.5em 0;
 }
+
+/* .sunglasses{
+    position: relative;
+    left: 13.25rem;
+    bottom: 1.7rem;
+} */
+
+.funny-glasses{
+    position: relative;
+        left: 13.25rem;
+        bottom: 6.7rem;
+}
+
 .sunglasses, .funny-glasses {
     width: 80px;
 }
@@ -95,7 +111,12 @@ main {
     width: 60px;
     transform: rotate(40deg);
 }
+
+
 .bandana {
+    position: absolute;
+       top: 11.25rem;
+    left: 6.8rem;
     width: 80px;
     transform: rotate(10deg);
 }
@@ -106,9 +127,13 @@ main {
     height: auto;
 }
 .pawprint {
+    position: fixed;
+    z-index: 1;
+    top: 2.75rem;
+    left: 4.1rem;
     width: 45px;
 }
-.sticky { 
+.sticky {
     overflow: auto;
     width: 600px;
 }
@@ -135,4 +160,12 @@ main {
     left: 133px;
     top: -10px;
     width: 40px;
+}
+.luna{
+    position: sticky;
+    left: 0;
+}
+
+.top-hat{
+    z-index: 1;
 }
